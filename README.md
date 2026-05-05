@@ -1,7 +1,7 @@
 # Chromebook CR-48 Wiki (Archived Copy)
 
 > [!NOTE]
-> This website is only working half-way because I don't have the extra time to fully restore the website right now, but I will get around to it soon.
+> This website is only working half-way because I don't have the extra time to fully restore this thing right now, but I will get around to it soon.
 >
 > Anyways you have access to "Files" folder where you can obtain everything you need for your CR-48.
 
