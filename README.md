@@ -1,5 +1,5 @@
 # Chromebook CR-48 Wiki (Archived Copy)
-# $\color{red}{\text{This website is only working half-way because I don't have the extra time to fully restore the sieve right now, but I will get around to it soon.}}$
+# This website is only working half-way because I don't have the extra time to fully restore the website right now, but I will get around to it soon.
 
 
 <p align="center">
