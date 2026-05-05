@@ -20,11 +20,11 @@
 ## Connectivity: 3G & GPS
 * [3G Activation and Reset](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G.html)
 * [Change 3G Carrier](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Change+3G+Carrier.html)
-* [Use 3G Wireless in Ubuntu](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Use+3G+Wireless+in+Ubuntu.html)[cite: 1, 2]
-* [3G in Ubuntu](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G+in+Ubuntu.html)[cite: 1, 2]
-* [Enable 3G in Standalone Linux](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Enable+3G+in+standalone+Linux.html)[cite: 1, 2]
-* [3G in Windows 7](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G+in+Windows+7.html)[cite: 1, 2]
-* [3G in Windows 8](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G+in+Windows+8.html)[cite: 1, 2]
+* [Use 3G Wireless in Ubuntu](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Use+3G+Wireless+in+Ubuntu.html)
+* [3G in Ubuntu](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G+in+Ubuntu.html)
+* [Enable 3G in Standalone Linux](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Enable+3G+in+standalone+Linux.html)
+* [3G in Windows 7](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G+in+Windows+7.html)
+* [3G in Windows 8](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/3G+in+Windows+8.html)
 * [GPS Configuration](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/GPS.html)
 * [Use GPS](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Use+GPS.html)
 
