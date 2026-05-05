@@ -1,0 +1,16 @@
+=Use the Cr-48 with Any 3G Carrier= 
+
+----
+====Your Cr-48 is associated with Verizon Wireless by default. To use a SIM card to access another carrier's 3G network (for instance, if you're traveling abroad), follow these steps:==== 
+# ====<span style="font-size: 14px; line-height: 20px;">Start your Cr-48 and sign in to your Google account</span>==== 
+# ====<span style="font-size: 14px; line-height: 20px;">Press **ctrl + alt + t** to open a terminal window</span>==== 
+# ====<span style="font-size: 14px; line-height: 20px;">Change your carrier association by entering this command: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace; font-size: 14px; line-height: 20px;">modem_set_carrier Generic UMTS</span> </span>==== 
+# ====<span style="font-size: 14px; line-height: 20px;">Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace; font-size: 14px; line-height: 20px;">exit</span> and press **enter**</span>==== 
+# ====<span style="font-size: 14px; line-height: 20px;">Turn off your Cr-48 and insert the SIM card in the slot under the battery</span>==== 
+# ====Restart your Cr-48. Click the network icon and see if the SIM card carrier is listed in the menu. Make sure mobile data is enabled.==== 
+# ====To switch your carrier back to Verizon, open a terminal window and type this command: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">modem_set_carrier Verizon Wireless</span>==== 
+
+Source: [[http://www.google.com/support/chromeos/bin/answer.py?answer=1283014]]
+
+
+[[image:cr48simslot.jpg width="800" height="535" align="center"]]

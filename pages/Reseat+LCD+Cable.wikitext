@@ -1,0 +1,13 @@
+=Reseat the LCD Backlight Cable= 
+----
+====If the screen of your Cr-48 suddenly goes dark it may be that the ribbon cable attaching the backlight to the motherboard has simply worked loose.==== 
+====Follow this guide to reseat and secure the cable to correct this problem.==== 
+# ====Open the Cr-48 case by following the guide [[Open the Cr-48|here]]==== 
+# ====Identify the LCD connector using the photograph below. It is under a small piece of black fabric tape.==== 
+# ====Gently remove the connector from its receptacle and then gently push it back in==== 
+# ====To prevent the connection from becoming loose again you can apply a small amount of hot glue behind the connection==== 
+# ====Reassemble the case==== 
+
+Source: [[http://www.chromeoslounge.com/cr-48-chrome-notebook/2920-lcd-backlight-failure-fix.html]]
+
+[[image:cr48lcd.jpg width="960" height="641" align="center"]]

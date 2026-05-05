@@ -1,0 +1,27 @@
+=Create Shortcuts to Easily Switch Between Chrome OS and Ubuntu= 
+
+----
+====After completing these steps you will be able to switch to Ubuntu from Chrome OS by simply entering the command <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">ubuntu</span> in the terminal.==== 
+==== ==== 
+====You will be able to switch to Chrome OS from Ubuntu by entering the command <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chromeos</span> in the terminal.==== 
+# ====Install Ubuntu using the instructions [[Install Ubuntu|here]]==== 
+# ====Boot into Ubuntu and navigate to the Home folder==== 
+# ====Press **ctrl + h**==== 
+# ====Double-click the file **.bashrc**==== 
+# ====Scroll to the bottom of the file and add this command: <span style="background-color: #00ff00; font-family: 'Lucida Console',Monaco,monospace;">alias chromeos='sudo cgpt add -i 6 -P 0 -S 0 /dev/sda;sudo reboot'</span>==== 
+# ====Save the file and close it==== 
+# ====Open a terminal by selecting Applications > Accessories > Terminal and type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chromeos</span>==== 
+# ====After entering your password (the default password is 'user'), the computer should reboot into Chrome OS==== 
+# ====Log in to Chrome OS and press **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo vim .profile</span> and press **enter** (to see a complete list of vim editor commands go [[@http://www.fprintf.net/vimCheatSheet.html|here]])==== 
+# ====Press the letter **a** to begin 'insert mode'==== 
+# ====Type <span style="background-color: #00ff00; font-family: 'Lucida Console',Monaco,monospace;">alias ubuntu='sudo cgpt add -i 6 -P 5 -S 1 /dev/sda;sudo reboot'</span>==== 
+# ====Press **esc** to return to 'command mode'==== 
+# ====Press **shift + z** then **shift + z** again to save the file and return to the terminal==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">exit</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> to log in again and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">ubuntu</span> and press **enter**==== 
+# ====The computer should reboot into Ubuntu==== 
+
+Sources: [[http://www.chromeoslounge.com/cr-48-chrome-notebook/548-easy-way-install-ubuntu-cr-48-a-8.html#post9580|http://www.chromeoslounge.com/cr-48-chrome-notebook/548-easy-way-install-ubuntu-cr-48-a-8.html#post9580]] and [[http://www.chromeoslounge.com/cr-48-chrome-notebook/548-easy-way-install-ubuntu-cr-48-a-9.html#post9711|http://www.chromeoslounge.com/cr-48-chrome-notebook/548-easy-way-install-ubuntu-cr-48-a-9.html#post9711]]

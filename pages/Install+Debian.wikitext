@@ -1,0 +1,36 @@
+=Install Debian 6.0.3 (32-bit) on the Cr-48= 
+----
+==== ==== 
+====The script created by [[http://chromeos-cr48.blogspot.com/2011/04/ubuntu-1104-for-cr-48-is-ready.html|Jay Lee]] to install Ubuntu Linux on the Cr-48 has been [[@http://www.chromebook-linux.com/2011/11/how-to-install-gnulinux-debian-603-on.html|modified]] to allow installation of Debian Linux==== 
+# ====Put your Cr-48 into Developer Mode by following the directions [[Set Developer Mode|here]].==== 
+# ====Let the Cr-48 boot into setup. This could take 5-6 minutes.==== 
+# ====Select your wireless connection and accept the license agreement but do not sign in.==== 
+# ====Open a command prompt by pressing **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo su</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">[[media type="custom" key="19261052"]]</span> then hit **enter**. (Those are uppercase Os, not zeros.)==== 
+# ====The script will prompt you to enter the size in gigabytes you want to reserve for Debian. Enter a number between 5 and 9.==== 
+# ====Wait while the script re-sizes partitions on the hard drive and reboots. Chrome OS will then go through a short "repair" process and automatically reboot.==== 
+# ====Repeat steps 3-7 to download and install Debian. Be patient, this can take an hour or more. When the process completes, the computer will boot into Debian.==== 
+** The default login name is **<span style="font-family: 'Lucida Console',Monaco,monospace;">user</span>**
+** The password is **<span style="font-family: 'Lucida Console',Monaco,monospace;">chromebook</span>**
+# ====Open the terminal at Applications > Accessories > Terminal and type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo cgpt add -i 6 -P 0 -S 1 /dev/sda</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo reboot</span> then hit **enter**==== 
+# ====Once Chrome OS reboots, open a command prompt by pressing **ctrl + alt + →**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo e2fsck -f /dev/sda7</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo resize2fs -p /dev/sda7</span> then hit **enter** (This resizes your Debian filesystem to the size you specified in step 8)==== 
+* ====To make Debian the default operating system:==== 
+** ====Open a command prompt by pressing **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> then hit **enter**==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo cgpt add -i 6 -P 5 -S 1 /dev/sda</span> then hit **enter**==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo reboot</span> then hit **enter**==== 
+* ====To make Chrome OS the default operating system either:==== 
+** ====Remove the battery and take the computer out of Developer Mode as described [[cr-48/Set Developer Mode|here]] //or//==== 
+** ====Open the Terminal and type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo cgpt add -i 6 -P 0 -S 1 /dev/sda</span> and hit **enter**==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo reboot</span> then hit **enter**==== 
+* ====The default root password is **<span style="font-family: 'Lucida Console',Monaco,monospace;">chromebook/linux.com</span>**==== 
+* ====To create shortcuts to easily switch between Chrome OS and Debian, follow the directions [[cr-48/Dual Boot Shortcuts|here]]==== 
+
+====The original Debian installation guide (written for the Samsung Chromebook) can be viewed at chromebook-linux.com here:==== 
+====[[http://www.chromebook-linux.com/2011/11/how-to-install-gnulinux-debian-603-on.html]]====

@@ -1,0 +1,16 @@
+=Cr-48 Recovery Mode Button= 
+----
+
+====Recovery Mode is a boot operation where the BIOS will prompt you to insert a recovery USB drive.==== 
+====The system will automatically enter Recovery Mode if the BIOS is unable to find a valid kernel to boot from.==== 
+====If you are in [[Set Developer Mode|Developer Mode]] you can enter Recovery Mode by pressing the space bar at the Chrome OS verification warning screen at startup.==== 
+====If you are not in Developer Mode and want to enter Recovery Mode, you can use the Recovery Mode button.==== 
+# ====Shut down the computer and turn it over==== 
+# ====Directly below the right rear rubber foot is a small pinhole (see photograph below)==== 
+# ====Place a paperclip in the hole and press the button==== 
+# ====While pressing the button, turn the computer on==== 
+# ====You will now see the recovery screen and can proceed with the Chrome OS recovery process described [[Recovery Drive|here]]==== 
+
+Source: [[http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/cr-48-chrome-notebook-developer-information]]
+
+<span style="display: block; text-align: center;">[[image:cr48-bottom.jpg width="700" height="472"]][[image:chromeos_ponyRecovery.png width="631" height="477"]]</span>

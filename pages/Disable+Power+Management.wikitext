@@ -1,0 +1,14 @@
+=Disable Power Management on the Cr-48= 
+----
+
+====To prevent your Cr-48 from going into Suspend Mode even if the lid is closed, you can disable power management.==== 
+# ====Set your Cr-48 to Developer Mode using the instructions [[Set Developer Mode|here]]==== 
+# ====Log in to Chrome OS and press **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo initctl stop powerm</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">exit</span> and press **enter**==== 
+# ====Press **ctrl + alt + ←** (← is the back arrow where the F1 key would normally be)==== 
+# ====To turn power management on again, either restart the computer or repeat these steps replacing the command in step 4 with <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo initctl start powerm</span>==== 
+
+
+Source: [[http://gabeortiz.net/2011/how-to-stop-your-cr48-from-going-into-suspend-on-lid-close/]]

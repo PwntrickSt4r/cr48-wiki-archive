@@ -1,0 +1,15 @@
+=Install a larger SSD in the Cr-48= 
+----
+
+# ====Create a Chrome OS recovery drive using the instructions [[Recovery Drive|here]]==== 
+# ====Obtain a compatible SSD. The [[@http://amzn.to/196gLlV|Intel® Solid-State Drive 310 Series]] and [[@http://www.amazon.com/gp/product/B00B3X72U4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00B3X72U4&linkCode=as2&tag=mcdotechserv-20|MyDigitalSSD 50mm Bullet Proof SSD]] are compatible with the Cr-48.==== 
+# ====Open the Cr-48 using the instructions [[Open the Cr-48|here]]==== 
+# ====Remove the retaining screw in the original SSD. (See photograph below.)==== 
+# ====Remove the original SSD.==== 
+# ====Insert the new SSD, replace the retaining screw and reassemble the case.==== 
+# ====Reinstall the Chrome OS using the instructions [[Recovery Drive|here]]==== 
+
+
+Source: [[http://www.chromeoslounge.com/cr-48-chrome-notebook/1553-i-upgraded-my-ssd-heres-my-amateur-mini-review.html]]
+
+[[image:cr48ssd.jpg align="center"]]

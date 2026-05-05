@@ -1,0 +1,51 @@
+=Flash the InsydeH2O BIOS on the Cr-48= 
+----
+[[image:cr-48_bios.png align="right"]][[image:insyde_h2o_bios.png align="right"]]
+====The InsydeH2O BIOS will make your Cr-48 function like a standard Intel-based laptop, allowing you to install a wide variety of operating systems including [[Windows7|Windows]] and various flavors of Linux.==== 
+====Follow this guide to safely back up your original Cr-48 BIOS and install the InsydeH2O BIOS.==== 
+====Your Chrome OS installation will not be altered by this process and will continue to operate properly, however Chrome OS updates will not install while the InsydeH2O BIOS is in place.==== 
+====Please note that <span style="color: #ff0000;">EVERY</span> step is critical and skipping ahead could render your computer unusable. Also, this guide <span style="color: #ff0000;">ONLY</span> applies to the Cr-48 and is <span style="color: #ff0000;">WILL NOT</span> work with any other Chromebook.==== 
+
+# ====**CRITICAL FIRST STEP**: Open the computer and disable the BIOS protection using the instructions [[Open the Cr-48|here]]==== 
+** If you skipped this step and are now stuck at the "Chrome OS is missing or damaged" screen, see [[Fix bad BIOS|this guide]] for a solution
+# ====Set your Cr-48 to [[Set Developer Mode|Developer Mode]] using the instructions [[Set Developer Mode|here]]==== 
+# ====Create a Chrome OS recovery drive using the instructions [[Recovery Drive|here]]==== 
+# ====Log in to Chrome OS and press **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo su</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">flashrom -r backup.bin</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cp backup.bin /home/chronos/user/Downloads</span> and press **enter**==== 
+# ====Press **ctrl + alt + ←** (the ← is the back arrow where the F1 key would normally be) to return to the normal Chrome OS interface==== 
+# ====Go to Gmail (or whatever email you use) and compose a new message addressed to yourself==== 
+# ====Select "Choose a File to attach," select the folder "File Shelf," select the file <span style="font-family: 'Lucida Console',Monaco,monospace;">backup.bin</span> and click "Open"==== 
+# ====Send the message. Keep this message safe - you'll need it if you want to restore your Cr-48 to its original state.==== 
+# ====Download the InsydeH2O BIOS for the Cr-48 here: [[file:cr-48/cr48.bin.tar.gz|cr48.bin.tar.gz]]==== 
+# ====Press **ctrl + alt + →** (F2)==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">tar -xvzf /home/chronos/user/Downloads/cr48.bin.tar.gz -C /home/chronos</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">flashrom -w /home/chronos/cr48.bin</span> and press **enter**==== 
+# ====Ignore any SPI erase errors. You will see a confirmation message after the system verifies that the BIOS has been flashed correctly.==== 
+# ====Shut down the computer.==== 
+# ====Restart the computer and immediately press the → key (F2) to modify the settings of the new BIOS.==== 
+
+Original source of Cr-48 InsydeH2O BIOS: [[@http://www.mustangevolution.com/forum/f99/t284626/]]
+Discussion thread on ubuntuforums.org: [[@https://ubuntuforums.org/showthread.php?t=1641911&page=40&p=10299420#post10299420|https://ubuntuforums.org/showthread.php?t=1641911&page=40&p=10299420#post10299420]]
+
+----
+=[[#restore]]Restore the Original Cr-48 BIOS= 
+====If you do not have a backup your original BIOS you can flash a "stock" BIOS==== 
+* A stock BIOS image for FISH models is available here: [[file:cr-48/fishstock.bin|fishstock.bin]]
+* A stock BIOS image for PONY models is available here: [[file:cr-48/ponystock.bin|ponystock.bin]]
+====Note that a stock BIOS will not contain certain information specific to your Cr-48 such as the serial number. For most users this will not present a problem.==== 
+# ====On another computer (or on your Cr-48 if you have installed Windows), download Ubuntu 11.04 here: [[http://releases.ubuntu.com/natty/ubuntu-11.04-desktop-i386.iso]]==== 
+# ====<span style="background-color: #ffffff; color: #222222; font-family: Arial,Helvetica,sans-serif;">Follow the instructions to create a bootable USB here: </span><span style="color: #6611cc; font-family: Arial,Helvetica,sans-serif; vertical-align: baseline;">[[@http://www.ubuntu.com/download/help/create-a-usb-stick-on-windows]]</span>==== 
+# ====<span style="background-color: #ffffff; color: #222222; font-family: Arial,Helvetica,sans-serif;">Boot your Cr-48 into Ubuntu from the USB and launch **Ubuntu Software Center**</span>==== 
+# ====<span style="background-color: #ffffff; color: #222222; font-family: Arial,Helvetica,sans-serif;">Install the application called **flashrom**</span>==== 
+# ====Copy the backup of your original BIOS (or the stock BIOS) to your home directory==== 
+# ====Open a terminal window and type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo flashrom -w backup.bin</span> and press **enter** (If you are using one of the stock BIOS images, replace <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">backup.bin</span> with either <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">fishstock.bin</span> or <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">ponystock.bin</span><span style="background-color: #ffffff;">)</span>==== 
+** **flashrom** may require additional text as a safeguard against "bricking" your computer.
+** If prompted to do so, modify the command in step 6 to read <span style="background-color: #ffff00; color: #222222; font-family: 'Lucida Console',Monaco,monospace;">sudo flashrom -w backup.bin -p internal:laptop=force_I_want_a_brick</span>
+# ====Ignore any SPI erase errors. You will see a confirmation message after the system verifies that the BIOS has been flashed correctly.==== 
+# ====Shut down the computer.==== 
+# ====Recover the Chrome OS using the guide [[Recovery Drive|here]]==== 
+
+Source: [[http://www.chrome-review.com/flashing-your-cr-48-bios/]]

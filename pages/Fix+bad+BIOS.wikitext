@@ -1,0 +1,49 @@
+=Recover a Cr-48 with an improperly flashed BIOS= 
+----
+
+====If you attempted to flash your BIOS but did not disable the hardware BIOS protection, you may have ended up with a partially-flashed BIOS.[[image:chromeos_ponyDamaged.png width="504" height="378" align="right"]]==== 
+====Your system will be stuck at the "Chome OS is missing or damaged" screen even after attempting the normal recovery procedure.==== 
+====Using another computer, follow this guide to create a recovery drive that will correctly flash the InsydeH2O BIOS and make your Cr-48 functional again.==== 
+
+==Create a BIOS Repair USB Drive (Windows)== 
+# ====Open your Cr-48 and disable the BIOS protection using the instructions [[Open the Cr-48|here]]==== 
+# ====Obtain a [[@http://www.amazon.com/gp/product/B007JR531I/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007JR531I&linkCode=as2&tag=mcdotechserv-20|4GB or larger USB drive]] and format it with one FAT32 partition==== 
+# ====Download and unzip the [[@https://mega.co.nz/#!yUpA3CgK!UxKoJ_0QBOgOpTkrL82FVgQZJ5mT4mwCuIzE0sIPtC4|Cr-48 BIOS Fix USB image]]==== 
+# ====Download and unzip [[@https://launchpad.net/win32-image-writer|Image Writer for Windows]] (alternate source here: [[@file:cr-48/win32diskimager-binary.zip|win32diskimager-binary.zip]])==== 
+# ====Run <span style="font-family: 'Lucida Console',Monaco,monospace;">Win32DiskImager.exe</span> (dismiss any "File Error" warnings that might appear)==== 
+# ====Click the blue folder icon, select the file <span style="font-family: 'Lucida Console',Monaco,monospace;">cr48biosfix.img<span style="font-family: Arial,Helvetica,sans-serif;"> and click 'Save'</span></span>==== 
+# ====Use the 'Device' menu to select your 4GB or larger USB drive==== 
+# ====Click the 'Write' button and wait a few minutes for the image to write to the USB drive==== 
+# ====Eject the USB drive==== 
+# ====Start your Cr-48 and insert the USB drive when prompted to properly flash the InsydeH2O BIOS==== 
+** ====If you now want to restore the original Cr-48 BIOS, follow the [[Flash BIOS#restore|guide here]]==== 
+
+
+==Create a BIOS Repair USB Drive (Linux)== 
+# ====Open your Cr-48 and disable the BIOS protection using the instructions [[Open the Cr-48|here]]==== 
+# ====Obtain a [[@http://www.amazon.com/gp/product/B007JR531I/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007JR531I&linkCode=as2&tag=mcdotechserv-20|4GB or larger USB drive]] and format it with one FAT32 partition==== 
+# ====Boot into Ubuntu (a live CD works if you don't have Ubuntu installed) and insert the USB drive==== 
+# ====Go to System > Administration > Startup Disk Creator to identify where your usb drive is mounted (ie. /dev/sdb)==== 
+# ====Download the Chrome OS developer build image <span style="font-family: 'Lucida Console',Monaco,monospace;">[[https://www.strongspace.com/shared/uhm6ydrg1p|duh-0.11.246.2011_03_08_1812-a1.zip ]]</span>==== 
+# ====Unzip the file <span style="font-family: 'Lucida Console',Monaco,monospace;">duh-0.11.246.2011_03_08_1812-a1.bin</span> and move it to your Home directory==== 
+# ====Open Terminal and enter the command: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo dd if=duh-0.11.246.2011_03_08_1812-a1.bin of=/dev/</span><span style="background-color: #ffff00; color: #ff0000; font-family: 'Lucida Console',Monaco,monospace;">sdb</span><span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;"> bs=4M oflag=sync</span>==== 
+** Change <span style="color: #ff0000; font-family: 'Lucida Console',Monaco,monospace;">sdb</span> if the location of your USB drive (identified in step 4) is different
+# ====Wait a few minutes for the image to write to the USB drive. When complete the system will confirm 2042643968 bytes (2.0 GB) copied.==== 
+# ====Eject the USB drive==== 
+# ====Download the InsydeH2O BIOS image <span style="font-family: 'Lucida Console',Monaco,monospace;">[[file:cr-48/custom.bin|custom.bin]]</span> and move it to your Home directory==== 
+# ====Insert the USB drive again==== 
+# ====Open Terminal and enter the command <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo mkdir /media/C-ROOT/home/chronos</span>==== 
+# ====Now enter the command <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo cp custom.bin /media/C-ROOT/home/chronos</span>==== 
+# ====Edit the startup script by entering the following command: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo gedit /media/C-ROOT/usr/sbin/chromeos-install</span>==== 
+# ====Delete __all__ of the text in this script and replace it with __only__ the following text:==== 
+> [[code]]
+#!/bin/bash
+flashrom -w /home/chronos/custom.bin
+[[code]]
+# ====Save the modified startup script and quit gedit==== 
+# ====Eject the USB drive==== 
+# ====Start your Cr-48 and insert the USB drive when prompted to properly flash the InsydeH2O BIOS==== 
+** ====If you now want to restore the original Cr-48 BIOS, follow the [[Flash BIOS#restore|guide here]]==== 
+
+
+Sources: [[http://www.chromeoslounge.com/cr-48-chrome-notebook/1006-%5Bsolved%5D-i-made-boo-boo-help.html|http://www.chromeoslounge.com/cr-48-chrome-notebook/1006-[solved]-i-made-boo-boo-help.html]] and [[http://blog.duh.org/2011/05/no-more-chromium-os-builds-for-cr-48.html]]

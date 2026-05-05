@@ -1,0 +1,22 @@
+=Reseat the Solid-State Drive (SSD) Cable= 
+----
+====If your Cr-48 begins exhibiting strange symptoms like random freezes or errors and you are unable to successfully restore the Chrome OS with a [[recovery drive]], the <span style="font-size: 14px; line-height: 20px;">ribbon cable attaching the SSD may have worked loose. </span>Follow this guide to reseat the cable to correct this problem.==== 
+====A video demonstrating this procedure can be viewed [[Reseat SSD Cable#video|here]].==== 
+# ====Open the Cr-48 case by following the guide [[Open the Cr-48|here]]==== 
+# ====Identify the SSD ribbon cable using the first photograph below==== 
+# ====Remove the retaining screw in the SSD shown in the second photograph below==== 
+# ====Carefully slide the SSD out of its socket and then gently push it back in==== 
+# ====Replace the retaining screw==== 
+# ====Trace the ribbon cable back to where it connects to the motherboard==== 
+# ====Gently lift each side of clamp where the cable attaches to the motherboard to release the cable==== 
+** Note how the ribbon cable and clamp are oriented to one another so you can put them back properly in the next steps
+# ====Gently slide the cable out of the connector==== 
+** Note: the cable is secured to the case with adhesive - lift it away carefully
+# ====Gently slide the cable back into its receptacle and replace the clamp to secure it==== 
+# ====Reassemble the case==== 
+[[image:cr48ssdcable.jpg width="800" height="535" align="center"]]
+<span style="display: block; text-align: center;">
+> [[image:cr48ssd.jpg align="center"]]
+
+> <span style="display: block; text-align: center;">[[#video]][[media type="youtube" key="wT2D4o5ME6Y?rel=0" height="510" width="640"]]</span>
+</span>

@@ -1,0 +1,34 @@
+=Cr-48 Keyboard Shortcuts in Chrome OS= 
+
+----
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + N** : Open a new window[[image:cr48searchkey.jpg align="right"]]</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Shift + N** : Open a new window in incognito mode</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + T** : Open a new tab</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + O** : Open a file in the browser</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Shift + Q** : Sign out of your Google Account</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + W** : Close the current tab</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Shift + W** : Close the current window</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Shift + T** : Reopen the last tab you’ve closed. Google Chrome remembers the last 10 tabs you’ve closed.</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + 1 through Ctrl + 8** : Go to the tab at the specified position in the window</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + 9** : Go to the last tab in the window</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + H** : Open the History page</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + J** : Open the Downloads page</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Tab** : Go to the next tab in the window</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Shift + Tab** : Go to the previous tab in the window</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Alt + ?** : Toggle the display of the keyboard shortcut viewer</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + ?** : Go to the Help Center</span>
+<span style="font-size: 14px; line-height: 20px;">**Alt + 1 through Alt + 9** : Go to the window at the specified position</span>
+<span style="font-size: 14px; line-height: 20px;">**Alt + 9** : Go to the last window open</span>
+<span style="font-size: 14px; line-height: 20px;">**Alt+Tab** : Go to the next window you have open</span>
+<span style="font-size: 14px; line-height: 20px;">**Alt + Shift + Tab** : Go to the previous window you have open</span>
+<span style="font-size: 14px; line-height: 20px;">**Shift + Esc** : Open the Task Manager</span>
+<span style="font-size: 14px; line-height: 20px;">**Click and hold the Back or Forward arrow in the browser toolbar** : See your browsing history for the tab</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + click a link** : Open the link in a new tab in the background</span>
+<span style="font-size: 14px; line-height: 20px;">**Ctrl + Shift and click a link** : Open the link in a new tab and switch to the newly opened tab Press</span>
+<span style="font-size: 14px; line-height: 20px;">**Shift and click a link** : Open the link in a new window</span>
+<span style="font-size: 14px; line-height: 20px;">**Drag a link to a tab** : Open the link in the tab</span>
+<span style="font-size: 14px; line-height: 20px;">**Drag a link to a blank area on the tab strip** : Open the link in a new tab</span>
+<span style="font-size: 14px; line-height: 20px;">**Type a URL in the address bar, then press Alt + Enter** : Open the URL in a new tab</span>
+<span style="font-size: 14px; line-height: 20px;">**Press Esc while dragging a tab** : Return the tab to its original position</span>
+
+Sources: [[http://www.cincygeek.com/2011/02/google-chromium-cr-48-tips-and-tricks/]] and [[http://chromeossite.com/2010/12/14/google-cr-48-keyboard-shortcut-list/]]
