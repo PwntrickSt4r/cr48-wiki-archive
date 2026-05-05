@@ -1,0 +1,20 @@
+=Create Chrome OS Recovery Drive= 
+----
+
+==Create a Chrome OS recovery drive== 
+* ====Obtain a USB drive or SD card [[@http://www.amazon.com/gp/product/B007JR531I/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007JR531I&linkCode=as2&tag=mcdotechserv-20|at least 4GB in size]]==== 
+* ====In Chrome OS, simply insert the drive in the computer, go to [[@chrome://imageburner/]] and follow the prompts==== 
+* ====In Windows, Mac OS X or Linux, follow the instructions provided by Google [[http://support.google.com/chromeos/bin/answer.py?hl=en&answer=1080595|available here]]==== 
+==== ==== 
+==Reinstall Chrome OS== 
+# ====Start your computer.==== 
+# ====When the "Chrome OS is missing or damaged" screen appears, insert the USB flash drive or SD card you created==== 
+# ====Wait for the Chromebook to boot from the recovery drive==== 
+# ====Follow the instructions that appear on the screen==== 
+# ====On successful installation of the Chrome OS, the computer will automatically restart==== 
+# ====Remove the recovery drive from the computer==== 
+
+Source: [[http://www.google.com/support/chromeos/bin/answer.py?answer=1046510]]
+
+
+[[image:chromeos_ponyRecovery.png align="center"]]

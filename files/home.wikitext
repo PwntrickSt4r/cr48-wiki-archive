@@ -1,0 +1,71 @@
+=<span style="font-family: 'Trebuchet MS',Helvetica,sans-serif; font-size: 160%;">GOOGLE Cr-48 CHROMEBOOK WIKI</span>= 
+
+----
+====The Cr-48 is an unbranded notebook computer designed by Google and manufactured by [[@http://www.inventec.com/english/indexEN.htm|Inventec]]. The Cr-48 was distributed by Google between December 2010 and April 2011 to participants in the [[http://news.cnet.com/8301-17938_105-20024897-1.html|Chrome OS Pilot Program]].==== 
+====Intended as a reference hardware design, these computers were not made available for sale to the general public. Approximately 60,000 Cr-48 notebooks were manufactured.==== 
+====The guides provided here represent the distillation of work by numerous individuals. Original sources of information are noted in each guide.==== 
+
+=Cr-48 HARDWARE INFORMATION, MODIFICATION and REPAIR= 
+====[[image:cr-48-notebook.jpg align="right"]]==== 
+* [[Specifications|Cr-48 hardware specifications]]
+* [[Replacement Parts|Cr-48 replacement parts and accessories]]
+* [[Set Developer Mode|Set Cr-48 to Developer Mode]]
+* [[3G|Activate or reset the 3G modem]]
+* [[Change 3G Carrier|Use a different 3G carrier]]
+* [[Recovery Mode Button|Recovery Mode button]]
+* [[Open the Cr-48|Open the Cr-48 case]]
+* [[Flash BIOS|Flash the BIOS]]
+* [[Fix bad BIOS|Fix an improperly flashed BIOS]]
+* [[CR-48 Lid Alignment Issues|Fix a misaligned lid]]
+* [[Cr-48 Hinge Reinforcement|Fix or reinforce Cr-48 hinge]]
+* [[Reseat LCD Cable|Fix a dead LCD]]
+* [[Reseat SSD Cable|Fix a malfunctioning SSD]]
+* [[Install Larger SSD|Install a larger SSD]]
+* [[Literature|Cr-48 literature and packaging]]
+* [[Easter Egg|Easter Egg in the Cr-48 BIOS]]
+* [[Video Gallery|Cr-48 video gallery 1]]: Promotions
+* [[Video Gallery 2|Cr-48 video gallery 2]]: Repairs
+
+=Cr-48 CHROME OS TRICKS and TIPS= 
+* [[Recovery Drive|Create a recovery drive]]
+* [[3G|Activate or reset the 3G modem]]
+* [[Disable Power Management|Disable power management]]
+* [[GPS|Use GPS]]
+* [[Keyboard Shortcuts|Cr-48 keyboard shortcuts]]
+
+=OTHER OPERATING SYSTEMS on the Cr-48= 
+* [[Fully Functional Dual Boot]]
+* [[Install Ubuntu|Install Ubuntu Linux]]
+* [[Install Debian|Install Debian Linux]]
+* [[Enable 3G in standalone Linux]]
+* [[Dual Boot Shortcuts|Create shortcuts for easy dual-booting]]
+* [[3G in Ubuntu|Use 3G wireless in Ubuntu]]
+* [[Fix Touchpad in Ubuntu|Fix the touchpad in Ubuntu]]
+* [[Configure Media Keys Ubuntu|Configure the keyboard in Ubuntu]]
+* [[Windows7|Install Windows 7]]
+* [[3G in Windows 7|Use 3G wireless in Windows 7]]
+* [[Windows8|Install Windows 8]]
+* [[3G in Windows 8|Use 3G wireless in Windows 8]]
+* [[Configure Media Keys Windows|Configure the keyboard in Windows]]
+* [[Mac OSX|Install Mac OS X]]
+
+====[[media type="custom" key="27225890" align="right"]]==== 
+=OFFICIAL GOOGLE SUPPORT for the Cr-48= 
+* [[http://googlechromereleases.blogspot.com/|Google Chrome Releases]] (Official Blog)
+* [[http://www.google.com/support/chromeos/|Chrome OS Help]]
+* [[http://www.google.com/support/chromeos/bin/topic.py?hl=en&topic=28114|Troubleshoot common issues]]
+* [[https://sites.google.com/a/chromium.org/dev/chromium-os/developer-information-for-chrome-os-devices/cr-48-chrome-notebook-developer-information|Cr-48 Chrome Notebook Developer Information]]
+
+=DISCUSSION FORUMS= 
+* [[https://groups.google.com/forum/#%21forum/chromebook-central|Chromebook Central]] (Official Google Group)
+* [[https://groups.google.com/forum/?fromgroups#%21forum/cr-48-test-pilots|Cr-48 Test Pilots]] (Google Group)
+* [[http://www.reddit.com/r/CR48/|Cr-48 subreddit]]
+
+=Cr-48 BAGS and CASES= 
+* [[http://www.amazon.com/gp/product/B007FTEO1A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B007FTEO1A&linkCode=as2&tag=mcdotechserv-20|STM Bags Small Alley Case]]
+* [[http://www.amazon.com/gp/product/B003LWTL2C/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B003LWTL2C&linkCode=as2&tag=mcdotechserv-20|V7 Professional Frontloader]]
+* [[http://www.amazon.com/gp/product/B000UQ2CGO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000UQ2CGO&linkCode=as2&tag=mcdotechserv-20|Sumdex Compact Brief]]
+* [[http://www.amazon.com/gp/product/B002JXFP3I/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002JXFP3I&linkCode=as2&tag=mcdotechserv-20|Kroo Black Zipper Glove]]
+
+=Cr-48 CLOTHING and ACCESSORIES= 
+* [[http://www.zazzle.com/ghchinoy|G. Hussain Chinoy at Zazzle.com]]

@@ -1,0 +1,23 @@
+=Install Windows 7 on the Cr-48= 
+
+----
+# ====Install the Insyde H2O BIOS by following the [[Flash BIOS|instructions here]][[image:cr48windows7.jpg width="400" height="415" align="right"]]==== 
+# ====Boot and immediately press → (F2) to enter BIOS setup. Confirm the following settings are correct in the BIOS:==== 
+** Advanced > IDE Configuration > HDC Configured As <AHCI>
+** Power > Advanced CPU Control > HT Support <Auto>
+** Boot > ACPI Selection <Acpi 3.0> (4.0 works also, but the BIOS says use 1.0 or 3.0)
+# ====Obtain a copy of [[@http://www.amazon.com/gp/product/B00GOUBT6E/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00GOUBT6E&linkCode=as2&tag=mcdotechserv-20|Windows 7]]. Both 32 and 64-bit versions will work. After installation you may have limited usable disk space unless you [[Install Larger SSD|install a larger SSD]].==== 
+# ====On another computer, create a bootable Windows 7 installation USB drive or SD card using the [[file:cr-48/Windows7-USB-DVD-tool.exe|Windows 7 USB DVD Tool available here]]==== 
+# ====Insert the USB drive or SD card in the Cr-48 and boot to the Windows 7 installer. During the installation:==== 
+** Select "Custom Install" rather than "Upgrade"
+** Select "Drive options (advanced)" and delete every partition on the internal Solid-State Drive (SSD)
+** Install Windows to 'Disk 0 Unallocated Space'
+# ====After Windows finishes installing, remove the installation media and reboot. The reboot may happen automatically - be sure to remove the installation media to boot properly from the SSD - don't restart the installation process.==== 
+# ====Download the following drivers and install in this order:==== 
+## [[http://downloadcenter.intel.com/Product_Filter.aspx?ProductID=2101&lang=eng&FamilyId=40|Intel Rapid Speed Technology]]
+## [[http://downloadcenter.intel.com/SearchResult.aspx?lang=eng&ProductFamily=Chipsets&ProductLine=Chipset+Software&ProductProduct=Intel%C2%AE+Chipset+Software+Installation+Utility&ProdId=816&LineId=1090&FamilyId=40|Intel Chipset Installation Utility]]
+## [[http://downloadcenter.intel.com/SearchResult.aspx?lang=eng&ProductFamily=Graphics&ProductLine=Netbook+and+Tablet+Graphics&ProductProduct=Intel%C2%AE+Graphics+Media+Accelerator+3150+%28Intel%C2%AE+GMA+3150%29|Intel Graphics Media Accelerator 3150]]
+## [[http://www.synaptics.com/resources|Synaptics TouchPad Drivers]]
+## [[https://docs.google.com/leaf?id=0B9rTgRm4OkZwNWI4ZmMyOTUtYmZmOC00ODQ0LWExY2YtNTZjMmIyOTZiYTg5&hl=en|Atheros Bluetooth]]
+# ====Configure the keyboard by following the [[Configure Media Keys Windows|instructions here]]==== 
+# ====Configure the Gobi 2000 3G modem by following the [[3G in Windows 7|instructions here]]====

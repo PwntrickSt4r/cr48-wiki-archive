@@ -1,0 +1,23 @@
+=Set Cr-48 to Developer Mode= 
+----
+
+# ====Turn off the computer.==== 
+# ====Remove the battery.==== 
+# ====To the right of the battery contacts is a small piece of black tape. Remove the tape. (See photograph below.)==== 
+# ====There is a white switch under the tape. For User Mode, the switch is away from the battery contacts.==== 
+# ====Use a pen or paper clip to push the switch toward the battery contacts.==== 
+# ====Replace the battery and start the computer.==== 
+# ====A warning message will display (see screenshot below). Press **ctrl + d** to proceed past it. If you do nothing the computer will eventually beep and proceed into Developer Mode.==== 
+# ====On first boot the computer will wipe itself and replace the image with a developer copy. This process takes approximately 5 minutes.==== 
+# ====You will need to go though the initial setup process again.==== 
+# ====Once you are logged in, you can open a command prompt by pressing **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Login at the prompt by typing <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> then hit **enter**.==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo su</span> then hit **enter**.==== 
+# ====You can now execute commands. Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">help</span> for a list of commands.==== 
+# ====To return to the graphical interface, press **ctrl + alt + ←** (← is the back arrow where the F1 key would normally be)==== 
+
+Source: [[http://www.thechromesource.com/cr-48-developer-mode-and-rooting-instructions/]]
+
+[[image:cr48_developer_switch.jpg align="center"]]
+[[image:cr48_developer_switch_2.jpg width="610" height="421" align="center"]]
+<span style="display: block; text-align: center;">[[image:chromeos_developer.png width="640" height="480"]]</span>

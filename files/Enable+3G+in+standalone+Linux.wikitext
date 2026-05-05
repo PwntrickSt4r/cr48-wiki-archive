@@ -1,0 +1,25 @@
+This has been tested on Debian 9/Stretch but it should work on any Debian based version of Linux (Ubuntu, Debian(duh), Mint, Kali ect.)
+
+Download the firmware that matches the carrier type you plan to use:
+[[@https://drive.google.com/file/d/0B_JHuCMpxbENa1pQaFBuNXVJWE0/view?usp=sharing|GSM/T-Mobile]]
+[[https://drive.google.com/file/d/0B_JHuCMpxbENODAzTXVSeVNraUU/view?usp=sharing|CDMA/Verizon]]
+
+Open a Terminal and run all of the following commands with Sudo privileges
+
+navigate to "/lib/firmware" by running "cd /lib/firmware then "sudo mkdir gobi" then cd into Gobi
+Run: "tar xvf ~/path/to/gobifirmware.tar.gz"
+Run: "sudo aptitude install gobi-loader modemmanager" to install the Gobi Modem Manager
+Run: "cp /lib/udev/rules.d/60-gobi-loader.rules /etc/udev/rules.d/60-gobi-loader.rules" to move the gobi rules file into the proper location
+Run: "sudo nano /etc/udev/rules.d/60-gobi.rules" to edit the rules file
+replace the file contense with the info here: http://pastebin.com/PCZVAWaL whitch adds the CR-48 Gobi HWID
+Run "sudo pkill modem-manager; sudo rmmod qcserial; sudo modprobe qcserial" to refresh the modem firmware
+
+Reboot
+
+Open your Desktops Modem Manager and you should now be able to add a mobile broadband connection! Enjoy 3G!
+
+Done!
+
+(Will be fixing links soon hosted on Google drive of old school. they have stopped using Gdocs)
+
+(Some credit for this guide has to go to tvall who helped me figure out what goes where and why)

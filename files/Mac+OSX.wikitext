@@ -1,0 +1,12 @@
+=Install Mac OS X on the Cr-48= 
+
+----
+
+====Macintosh OS X can be installed on the Cr-48, however there are significant limitations due to the lack of decent video support and sleep issues.==== 
+==== ==== 
+====If you want to install OS X anyway, you should:==== 
+# ====Flash the InsydeH20 BIOS by following the [[Flash BIOS|guide here]]==== 
+# ====Take a look at the installation [[http://www.insanelymac.com/forum/index.php?showtopic=241376|discussion here]]==== 
+
+
+[[media type="youtube" key="CdxL2PWwI64" height="349" width="560" align="center"]]

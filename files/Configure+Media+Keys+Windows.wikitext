@@ -1,0 +1,20 @@
+=Configure the Cr-48 Keyboard in Windows= 
+
+----
+==== ==== 
+====Follow this guide to configure the Cr-48 keyboard to function correctly in Windows.==== 
+# ====Install Windows 7 by following the guide [[Windows7|here]], or Windows 8 by following the guide [[Windows8|here]].==== 
+# ====Download and install [[http://www.autohotkey.com/download/|AutoHotkey]]==== 
+** During installation, select the "Unicode (32-bit)" version
+# ====Run AutoHotkey==== 
+** The first time AutoHotkey runs, a sample script is created in the Notepad application
+** Erase the contents of the sample script and paste the custom script for the Cr-48 keyboard available [[http://automatedme.googlecode.com/svn-history/r180/AutoHotKey/cr-48.ahk|here]]
+** Save the script and exit Notepad
+# ====Place a shortcut to the AutoHotkey application in the Startup folder. Instructions for this step are available [[http://windows.microsoft.com/en-US/windows-xp/help/setup/run-programs-at-startup|here]]==== 
+# ====Restart the computer==== 
+
+Source: [[http://code.google.com/p/automatedme/]]
+
+[[image:cr-48_media_keys.png align="center"]]
+<span style="display: block; text-align: center;">[[image:cr-48_keyboard.jpg width="900" height="388"]]
+</span>

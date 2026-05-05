@@ -1,0 +1,41 @@
+=Fix Touchpad in Ubuntu on the Cr-48= 
+
+----
+==== ==== 
+====Follow these steps to enable two-finger scrolling and other multitouch features of the touchpad in Ubuntu 11.04.==== 
+[[image:cr48notebook.jpg width="572" height="263" align="right"]]
+====**<span style="color: #ff0000;">Recent updates to Ubuntu appear to have resolved the touchpad issues on the Cr-48. Follow this guide only if problems with the touchpad persist after installing all normal updates with Update Manager.</span>**==== 
+
+
+==The easy way:== 
+# ====Install Ubuntu 11.04 on your Cr-48 by following <span class="wiki_link_ext">[[http://chromeos-cr48.blogspot.com/2011/04/ubuntu-1104-for-cr-48-is-ready.html|Jay Lee's guide here]]</span>==== 
+# ====Download the [[http://cr-48.wikispaces.com/file/view/xserver-xorg-input-synaptics_1.3.99%2Bgit20110116.0e27ce3a-0ubuntu12.1_i386.deb|touchpad drivers here]]==== 
+# ====Double-click the .deb package you downloaded in step 2. This will launch Ubuntu Software Center.==== 
+# ====Click the 'Reinstall' or 'Upgrade' button (the button you'll see is based on which driver version is already installed)==== 
+# ====Click 'Install Anyway' if a warning appears about removing the x.org x server==== 
+# ====Enter your password to authenticate (the default password is 'user')==== 
+# ====Wait for the installation to complete and restart your Cr-48==== 
+# ====Adjust settings as desired in the Touchpad tab of Mouse Preferences.==== 
+==== ==== 
+== == 
+
+==If the easy way doesn't work...== 
+====You can compile your own drivers and install them by following these steps:==== 
+# ====Install Ubuntu 11.04 on your Cr-48 by following Jay Lee's guide [[http://chromeos-cr48.blogspot.com/2011/04/ubuntu-1104-for-cr-48-is-ready.html|here]]==== 
+# ====Boot into Ubuntu and open the Terminal==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">mkdir $HOME/Desktop/build</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">[[media type="custom" key="9752912"]]</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">apt-get source xserver-xorg-input-synaptics</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cd xserver-xorg-input-synaptics*</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cd debian</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cd patches</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">tar xfvj ../../../synaptics-suse-patches.tar.bz2</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">ls -1 2*.patch >> series</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cd ../..</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo apt-get build-dep xserver-xorg-input-synaptics</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">dpkg-buildpackage -us -uc -rfakeroot</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo dpkg -i ../xserver-xorg-input-synaptics_1*.deb</span> and press **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo dpkg -i ../xserver-xorg-input-synaptics-dev*</span> and press **enter**==== 
+# ====Restart your Cr-48 and adjust settings as desired in the Touchpad tab of the Mouse Preferences. Feel free to delete the folder entitled 'build' that is now on your desktop.==== 
+
+Source: [[https://bugs.launchpad.net/ubuntu-release-notes/+bug/582809/comments/144]]

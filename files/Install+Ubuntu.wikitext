@@ -1,0 +1,28 @@
+=Install Ubuntu on the Cr-48= 
+----
+
+====[[image:cr48ubuntu.jpg align="right"]]==== 
+* ====To install **Ubuntu 12.04**, please see the guide on Jay Lee's blog here: [[@http://chromeos-cr48.blogspot.com/2012/04/chrubuntu-1204-now-with-double-bits.html]]==== 
+* ====To install **Ubuntu 11.04**, go here: [[http://chromeos-cr48.blogspot.com/2011/04/ubuntu-1104-for-cr-48-is-ready.html]]==== 
+* ====To install **Ubuntu 10.10**, follow the steps below:==== 
+# ====Put your Cr-48 into Developer Mode by following the directions [[Set Developer Mode|here]].==== 
+# ====Let the Cr-48 boot into setup. This could take 5-6 minutes.==== 
+# ====Select your wireless connection and accept the license agreement.==== 
+# ====Open a command prompt by pressing **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Type chronos then hit **enter**==== 
+# ====Type sudo su then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">[[media type="custom" key="9743126"]]</span> then hit **enter**. (That is an uppercase O, not a zero.)==== 
+# ====Wait while the script re-sizes partitions on the hard drive and reboots.==== 
+# ====Repeat steps 2-7 to download and install Ubuntu. Be patient, this can take an hour or more. When the process completes, the computer will boot into Ubuntu, however upon rebooting, you will be back in Chrome OS.==== 
+# ====To make Ubuntu the default operating system:==== 
+** ====Open a command prompt by pressing **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> then hit **enter**==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo su</span> then hit **enter**==== 
+** ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cgpt add -i 6 -P 5 -S 1 /dev/sda</span> then hit **enter**==== 
+# ====To make Chrome OS the default operating system either:==== 
+** ====Remove the battery and take the computer out of Developer Mode as described [[Set Developer Mode|here]] //or//==== 
+** ====Open the Terminal and type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo cgpt add -i 6 -P 0 -S 1 /dev/sda</span> and hit **enter**==== 
+# ====The user name and password in Ubuntu is **user**==== 
+# ====To create shortcuts to easily switch between Chrome OS and Ubuntu, follow the directions [[Dual Boot Shortcuts|here]]==== 
+
+Source: [[http://chromeos-cr48.blogspot.com/2010/12/easy-way-to-install-ubuntu-on-your-cr.html]]

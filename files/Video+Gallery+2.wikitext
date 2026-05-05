@@ -1,0 +1,22 @@
+=Cr-48 Video Gallery 2: Repair= 
+
+----
+[[media type="youtube" key="4XLNiYIExiQ" height="360" width="640" align="center"]]
+
+<span style="display: block; text-align: center;">Disassembly and Repair (Part 1 of 3)</span><span style="display: block; text-align: center;">
+</span>
+[[media type="youtube" key="bseHRzwIBgM" height="360" width="640" align="center"]]
+
+<span style="display: block; text-align: center;">Disassembly and Repair (Part 2 of 3)</span><span style="display: block; text-align: center;">
+</span>
+[[media type="youtube" key="JA0plmkBaL0" height="360" width="640" align="center"]]
+
+<span style="display: block; text-align: center;">Disassembly and Repair (Part 3 of 3)</span><span style="display: block; text-align: center;">
+</span>
+[[media type="youtube" key="wT2D4o5ME6Y" height="480" width="640" align="center"]]
+
+<span style="display: block; text-align: center;">Reseat SSD Cable</span>
+
+<span style="display: block; text-align: center;">
+</span><span style="display: block; text-align: center;">
+</span>

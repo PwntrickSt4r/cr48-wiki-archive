@@ -1,0 +1,36 @@
+=Configure the Keyboard in Ubuntu= 
+----
+
+====Follow this guide to assign the Cr-48 media keys to their appropriate functions in Ubuntu 10 (see further down for Ubuntu 11.04 "Natty" setup).==== 
+# ====<span style="font-size: 14px; line-height: 20px;">Install Ubuntu by following the guide [[Install Ubuntu|here]]</span>==== 
+# ====Install **xbacklight** either by using Synaptic Package Manager or by typing this in the terminal: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo apt-get install xbacklight</span>==== 
+# ====Go to System > Preferences > Keyboard Shortcuts==== 
+# ====Click the **Add** button==== 
+# ====Under **Name:** type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">Brightness up</span>==== 
+# ====Under **Command:** type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">xbacklight -set 100</span>==== 
+# ====Click the **Apply** button==== 
+# ====Click the **Add** button again==== 
+# ====Under **Name:** type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">Brightness down</span>==== 
+# ====Under **Command:** type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">xbacklight -dec 10</span>==== 
+# ====Click the **Apply** button==== 
+# ====Scroll down to the bottom of the Keyboard Shortcuts window where you'll find the two shortcuts you just created==== 
+# ====Click the right column next to the shortcut **Brightness up** and the words **New shortcut...** will appear==== 
+# ====Press the appropriate brightness control button on your Cr-48 keyboard to link that button to the shortcut==== 
+# ====Repeat the previous two steps for the **Brightness down** shortcut==== 
+# ====Scroll to the top of the Keyboard Shortcuts window and repeat these steps for the volume controls and any other actions you wish to assign to specific keys==== 
+# ====It may be necessary to reboot the computer to get everything working==== 
+
+
+[[image:cr-48_media_keys.png width="880" height="266" align="center"]]
+[[image:cr-48_keyboard.jpg width="800" height="346" align="center"]]
+
+=Ubuntu 11.04= 
+This version of Ubuntu uses a different mechanism for controlling the display backlight level. Save the following script as "backlight.sh" to your disk, in /home/user/backlight.sh [[file:backlight.sh]]. The script reads from and writes to /sys/class/backlight/i915_backlight/brightness in order to set the brightness of the screen. It is called with either "up" or "down" to increase/decrease the brightness of the screen. 
+
+With the file in place in /home/user/backlight.sh (or wherever you wish to store it):
+1. Run 'chmod +x /home/user/backlight.sh' to make the script executable
+2. Run 'sudo chmod 777 /sys/class/backlight/i915_backlight/brightness' to make the backlight device file writeable by all users (or set the permissions as you see fit, but the user logged into XWindows must have write permissions to the file or changes will not be allowed to the backlight value).
+* At this point, the file can be run at the command line with "/home/user/backlight.sh up" and "/home/user/backlight.sh down"
+3. Configure "System" -> "Preferences" -> "Keyboard Shortcuts" and add new mappings for the two backlight buttons on the CR-48. Add two custom shortcuts:
+* Decrease Screen Brightness: set its "Command" field to "/home/user/backlight.sh down" and map it to Ctrl+F6
+* Increase Screen Brightness: set its "Command" field to "/home/user/backlight.sh up" and map it to Ctrl+F7
