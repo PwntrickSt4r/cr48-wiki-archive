@@ -1,0 +1,20 @@
+=<span style="font-size: 1.066em;">Install Windows 8 on the Cr-48</span>= 
+
+----
+# ====<span style="font-size: 15px; line-height: 22px;">Install the InsydeH2O BIOS by following the [[cr-48/Flash BIOS|instructions here]][[image:cr48_windows8.jpg width="400" height="390" align="right" link="cr-48/Flash BIOS"]]</span>==== 
+# ====<span style="font-size: 1.066em;">Boot and immediately press → (F2) to enter BIOS setup. Confirm the following settings are correct in the BIOS:</span>==== 
+** Advanced > IDE Configuration > HDC Configured As <AHCI>
+** Power > Advanced CPU Control > HT Support <Auto>
+** Boot > ACPI Selection <Acpi 3.0> (4.0 works also, but the BIOS says use 1.0 or 3.0)
+# ====<span style="font-size: 1.066em;">Obtain a copy of [[@http://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&camp=1789&creative=9325&index=aps&keywords=B00EDSI7QO&linkCode=as2&tag=mcdotechserv-20|Windows 8]]. Both 32 and 64-bit versions will work. After installation you may have limited usable disk space unless you [[@cr-48/Install Larger SSD|install a larger SSD]]. </span>==== 
+# ====<span style="font-size: 1.066em;">On another computer, create a bootable Windows 8 installation USB drive or SD card using the [[@file:Windows7-USB-DVD-tool.exe|Windows 7 USB/DVD Tool available here]]</span>==== 
+# ====<span style="font-size: 1.066em;">Insert the USB drive or SD card in the Cr-48 and boot to the Windows 8 installer. During the installation:</span>==== 
+** Select "Custom (advanced)" rather than "Upgrade"
+** Select "Drive options (advanced)" and delete every partition on the internal Solid-State Drive (SSD)
+** Install Windows to 'Disk 0 Unallocated Space'
+# ====<span style="font-size: 1.066em;">After Windows finishes installing, you will be instructed to remove the USB drive or SD card in order to reboot and continue setting up Windows.</span>==== 
+# ====<span style="font-size: 1.066em;">Enable multitouch features of the trackpad, including two-finger scrolling, by installing the </span>[[http://www.synaptics.com/en/drivers.php|Synaptics Gesture Suite availabe here]]. Note: after running Windows Update once after installing the Synaptics package, Windows will find an optional update called "Synaptics - Input - Synaptics PS/2 Port TouchPad." This update will disable most functionality of the trackpad including two-finger scrolling. To avoid installing it, right-click on this update and select "Hide Update."==== 
+# ====Configure the keyboard by following the [[Configure Media Keys Windows|instructions here]]==== 
+# ====<span style="background-color: #ffffff;">Configure the Gobi 2000 3G modem by following the [[3G in Windows 8|instructions here]].</span>==== 
+
+[[media type="youtube" key="lDMbYdU2qiQ?rel=0" height="360" width="480" align="center"]]

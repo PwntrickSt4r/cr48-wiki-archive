@@ -1,0 +1,70 @@
+<span style="display: block; font-size: 1.4em; line-height: 1.5; text-align: center;">**Fully Functional Dual Boot on Chromebook**</span><span style="display: block; text-align: center;">by [[http://www.wikispaces.com/user/view/xak944|Xak]]</span>
+== == 
+==Introduction== 
+Most other Chrome OS dual boot guides have one or more drawbacks, such as:
+* using the hardware dev mode toggle switch under the battery to change OSs
+* running an unfriendly command prior to rebooting to change OSs
+* running a mismatched Chrome kernel in the alternate Linux environment
+* lacking the ability to update Chrome OS
+This guide details installation of a full standalone secondary Linux operating system with its own kernel (this could theoretically work with Windows or other OSs as well), fully functioning Chrome OS with update capability, and a nice pretty (and customizable) GRUB2 bootloader to select operating system on boot. Also covered is updating to new releases of Chrome OS and customizing the boot menu.
+
+I made this guide using a Cr-48 prototype Chromebook and Linux Mint 14.
+== == 
+==Limitations== 
+There are a couple of drawbacks with this setup:
+* Once an alternate BIOS is installed, Chrome OS no longer recognizes the dev switch and therefore cannot be put into dev mode to enable root shell and TTY2 access. *
+* Chrome OS must be updated manually, but this is true of any non-stock Chromebook config (instructions for manual update below).
+<span style="font-size: 13px; line-height: 1.5;">* I feel confident that there is probably a workaround for this, but I have not found it yet.</span>
+== == 
+==Prerequisites== 
+To set this up, you will need the following:
+* A Chromebook capable of booting unsigned images on external USB. For a Cr-48, you must have [[Flash BIOS|flashed the Insyde “Luigi” BIOS]].
+* A bootable USB drive with a live Linux distro that includes GRUB2 and has tools for editing GPT partitions. I used Linux Mint 14.
+* (Optional: required if you don’t already have Chrome OS installed or wish to update Chrome OS) A recovery image file for your Chromebook. You can find the download link for your Chromebook from Google’s [[http://support.google.com/chromeos/bin/answer.py?hl=en&answer=1080595|official recovery page]] which provides an interactive shell script that will determine the right one and download it (you can skip the creation of a Chrome OS recovery USB). The file will be a .zip containing a raw .bin file which is the entire Chrome OS GPT partition table image.
+== == 
+==Installation== 
+# **Boot** your Chromebook **off the live Linux USB stick**.
+# If you already have Chrome OS installed and do not wish to update or reinstall it, you may skip to step 6.
+# Transfer or **make available the recovery .bin file** within the live environment (you can copy the file across the network to /tmp, which is usually a 1GB RAM disk, or connect another USB storage device containing the file if your Chromebook has an extra USB port).
+# **Write the .bin image file onto the HDD/SSD of your Chromebook**. NOTE THAT THIS WILL WIPE ALL DATA ON THE DRIVE! Make sure you use the correct block device for your HDD/SSD (/dev/sda in this example).
+> <span style="font-family: 'Lucida Console',Monaco,monospace; font-size: 13px; line-height: 1.5;">dd if=chromeos_*_x86-mario_recovery_stable-channel_mp-v2.bin of=/dev/sda bs=4M</span>
+# At this point, you should have a functioning Chrome OS install. It’s a good idea to **reboot and verify that Chrome OS boots** at this point, or you can continue if you’re feeling confident. (If you reboot, you’ll have to boot back off the live Linux USB for the next step).
+# Now to **modify the partition layout**. Note that we are dealing with a GPT partition table, which has some notable differences from the traditional ‘msdos’ partition table. I suggest you read up on the differences before proceeding. I used GParted 0.12.1 with libparted 2.3.
+> NOTE: If errors are detected in the GPT table by GParted or parted, allow it to fix them (this can be due to writing an image smaller than the device, which will happen if you have upgraded the SSD).
+## The STATE partition (partition #1) is probably very large. This is the dynamic user content partition used in Chrome OS, so feel free to **shrink the STATE partition as much as you like**. I made mine 5GB.
+## If you have extra space at the end of your drive, **move all partitions between the areas of free space to the end of the disk** so that the free space becomes contiguous.
+## **Create a 1MB** (yes, one megabyte) partition at the **beginning** of the free space and **add the flag ‘bios-grub’** to it.
+## In the remaining free space, **create whatever partitions you like** which will contain the additional operating system(s) you are about to install.
+# **Install the new OS** like normal, choosing the partition(s) that you created in step 6,4, and **install the bootloader to the device** (/dev/sda). GRUB2 should automatically detect Chrome OS as ‘Other Linux distribution’ and add a boot menu entry for it.
+# **Reboot**. If all went well, you should boot to the GRUB2 bootloader and be able to select between Chrome OS and the OS you just installed. Now E<span style="font-size: 13px; line-height: 1.5;">njoy your awesome new dual-boot setup with the ability to update Chrome OS in the future!</span>
+
+<span style="font-size: 1.3em; line-height: 1.5;">**Updating Chrome OS**</span>
+<span style="font-size: 13px; line-height: 1.5;">One of the downsides to modifying your Chromebook is that you will loose the automatic update ability of Chrome OS. Here is how you can update to the latest release manually.</span>
+Note: You must have already set up your system like the above section before following these steps.
+# **Boot** into your **installed Linux distro**.
+# **Download the latest recovery image** for your Chromebook. You can find the download link for your Chromebook from Google’s [[http://support.google.com/chromeos/bin/answer.py?hl=en&answer=1080595|official recovery page]].
+# Check your current partition structure:
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">sudo parted /dev/sda p</span>
+# We will be **overwriting KERN-A and ROOT-A** partitions, so identify them in the parted output and note their associated 'Number'.
+# View & identify the partitions we will be writing from the downloaded recovery image in the same way:
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">parted chromeos_*_x86-mario_recovery_stable-channel_mp-v2.bin p</span>
+# **Install the kpartx tool** if it is not already installed:
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">sudo aptitude install kpartx</span>
+# **Use kpartx to mount the downloaded image** using loop devices, noting the loop device partition numbers:
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">sudo kpartx -av chromeos_*_x86-mario_recovery_stable-channel_mp-v2.bin</span>
+# (Optional but recommended) **Make a backup** of the current Chrome OS partitions (using the noted partition descriptors from step 4):
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">sudo dd if=/dev/sda2 of=KERN-A_backup.bin
+> sudo dd if=/dev/sda3 of=ROOT-A_backup.bin</span>
+# Now we are ready to **write the partitions** (use the noted loop devices from step 7 and noted partition descriptors from step 4):
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">sudo dd if=/dev/mapper/loop0p2 of=/dev/sda2
+> sudo dd if=/dev/mapper/loop0p3 of=/dev/sda3</span>
+# (Optional) The previous GRUB entry for Chrome OS should still work, but if it doesn't, run:
+> <span style="font-family: 'Lucida Console',Monaco,monospace;">sudo update-grub</span>
+> Chrome OS will be identified as 'unknown Linux distribution', feel free to customize this by manually editing grub.cfg (not recommended) or installing grub-customizer.
+# **Reboot** and enjoy your newly updated Chrome OS!
+== == 
+==Boot Menu Customization== 
+By default, GRUB2 will place the ‘Unknown Linux Distribution’ (Chrome OS) at the bottom of the boot menu, below things like recovery mode, memtest, etc. This probably isn’t the optimal configuration since you’ll primarily be choosing between Linux and Chrome OS, and probably want those as the first two entries. Enter grub-customizer, a GUI application that allows you to extensively customize the boot menu.
+This customization could also be achieved by manually editing grub.cfg, but that file will be clobbered when the update-grub script runs again (when a kernel is updated, etc.). Instead, grub-customizer modifies the grub.d configuration scripts and will actually preserve your customization when new entries are detected.
+
+On my Cr-48, I changed the timeout to 5 seconds, renamed ‘Unknown Linux Distribution’ to ‘Chrome OS’, moved it to the top of the boot list, and made it the default. I also increased the font size and added a Chrome logo background image to the boot screen. The result is a very sweet looking boot menu which automatically boots Chrome OS in 5 seconds, and only requires me to press two keys to boot Linux if I want (down, enter).

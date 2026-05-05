@@ -1,0 +1,21 @@
+=3G in Windows 7= 
+----
+====Follow this guide to use the Gobi 2000 3G hardware under Windows 7.==== 
+# ====Download and install the Qualcomm Gobi 2000 Lenovo installer for Windows available [[@https://docs.google.com/open?id=0B9rTgRm4OkZwUy1VMXhDTjVTSi10elZ2cTFEZVl5Zw|here]]==== 
+# ====Download and unzip the Gobi 2000 Cr-48 installation package available [[@http://cr-48.wikispaces.com/file/view/gobi-cr48-2011-03-02.zip|here]]==== 
+# ====Move the **<span style="font-family: 'Lucida Console',Monaco,monospace;">QUALCOMM</span>** folder from the Gobi 2000 Cr-48 installation package to **<span style="font-family: 'Lucida Console',Monaco,monospace;">C:\ProgramData\</span>** (it may be necessary to boot into Safe Mode to overwrite the existing files)==== 
+# ====Right-click Computer, select Properties, then Device Manager to find Gobi 2000 under "Other devices"==== 
+# ====Right-click the Gobi 2000 icon in the Device Manager and select "Update Driver Software"==== 
+# ====Install the drivers located in the installation package in the folder entitled **<span style="font-family: 'Lucida Console',Monaco,monospace;">cr48-modified</span>** (be sure to check the "Include subfolders" box)==== 
+# ====Move the contents of the folder entitled **<span style="font-family: 'Lucida Console',Monaco,monospace;">firmware</span>** to **<span style="font-family: 'Lucida Console',Monaco,monospace;">C:\Program Files\Qualcomm\Images\Lenovo\1</span>** (overwrite the existing files)==== 
+# ====Go to Start > All Programs > Accessories and right-click Command Prompt. Select "Run as administrator"==== 
+# ====Enter the following command: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">mklink /D \"Program Files (x86)\" \"Program Files\"</span>==== 
+# ====Open the **<span style="font-family: 'Lucida Console',Monaco,monospace;">Release</span>** folder in the installation package and run **<span style="font-family: 'Lucida Console',Monaco,monospace;">GobiLoader.exe</span>**==== 
+# ====Use the Device Manager to scan for hardware changes==== 
+# ====For all new devices, install the drivers in the folder entitled **<span style="font-family: 'Lucida Console',Monaco,monospace;">cr48-modified</span>**<span style="font-family: Arial,Helvetica,sans-serif;"> the same way you did in step 6</span>==== 
+# ====Go to Start > Control Panel > Network and Internet > Network and Sharing Center and select "Set up a new connection or network"==== 
+# ====Select "Set up a dial-up connection"==== 
+# ====Enter <span style="font-family: 'Lucida Console',Monaco,monospace;">#777</span> as the number, name the connection "<span style="font-family: 'Lucida Console',Monaco,monospace;">Verizon 3G</span>" and click **Connect**==== 
+# ====It will be necessary to run **<span style="font-family: 'Lucida Console',Monaco,monospace;">gobiloader.exe</span>** again any time the computer has been shut down, so put the **<span style="font-family: 'Lucida Console',Monaco,monospace;">Release</span>** folder somewhere convenient or simply put a shortcut to **<span style="font-family: 'Lucida Console',Monaco,monospace;">GobiLoader.exe</span>** in your Startup folder as described [[http://windows.microsoft.com/en-US/windows-xp/help/setup/run-programs-at-startup|here]]==== 
+
+<span style="background-color: #ffffff; color: #555555; font-family: 'Istok Web',Helvetica,Arial,sans-serif; font-size: 12px; vertical-align: baseline;">Source: </span>[[http://blog.bagearon.com/?p=65]] and [[http://www.chromeoslounge.com/cr-48-chrome-notebook/807-cr48-gobi2000-use-other-oses-8.html]]
