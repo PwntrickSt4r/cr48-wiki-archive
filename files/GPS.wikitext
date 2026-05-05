@@ -1,0 +1,19 @@
+=Use GPS on the Cr-48= 
+
+----
+# ====Set your Cr-48 to [[Set Developer Mode|Developer Mode]] by using the [[Set Developer Mode|instructions here]][[image:cr48gps.jpg align="right"]]==== 
+# ====Click on the WiFi status bar (top right corner) and confirm that Cellular is not disabled==== 
+# ====Open a command prompt by pressing **ctrl + alt + →** (→ is the forward arrow where the F2 key would normally be)==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">chronos</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">sudo su</span> then hit **enter**==== 
+# ====Turn GPS on by typing <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">initctl start gpsd</span> then hitting **enter**==== 
+# ====View the simple command-line GPS display by typing <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">cgps</span> then hitting **enter**==== 
+# ====If you get an error such as 'no gpsd running or network error: -6, can't connect to host/port pair' shut down and restart your Cr-48==== 
+# ====Find an open area and wait for a GPS satellite lock==== 
+# ====When you are finished, press **q** to quit==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">initctl stop gpsd</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">exit</span> then hit **enter**==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">exit</span> again then hit **enter**==== 
+# ====Press **ctrl + alt + ←** (← is the back arrow where the F1 key would normally be) to return to the normal Chrome OS interface==== 
+
+Sources: [[http://chromeos-cr48.blogspot.com/2011/01/gps-functional-in-0101561.html]] and [[http://www.chrome48.info/2011/01/gps-works.html]]

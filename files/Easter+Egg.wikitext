@@ -1,0 +1,60 @@
+=Easter Egg in the Cr-48 BIOS= 
+
+----
+====The firmware team at Google encoded an "Easter egg" in the Cr-48 BIOS that can be viewed by taking the following steps:==== 
+# ====Set your Cr-48 to Developer Mode using the instructions [[Set Developer Mode|here]]==== 
+# ====Press the power button to start your Cr-48==== 
+# ====When the Chrome OS verification warning screen appears, type the following: <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">xyzzy</span>==== 
+# ====The screen will display the image below, a reference to the notorious [[@http://en.wikipedia.org/wiki/Blue_Screen_of_Death|Blue Screen of Death]] in Microsoft Windows==== 
+
+[[image:cr48_bsod_easter_egg.gif align="center"]]
+
+====[[https://profiles.google.com/116132849288851300235/about|Bill Richardson]] at Google provided the following details about the origin and contents of this image:==== 
+* ====The hexadecimal numbers are the ASCII representation of this text:==== 
+[[media type="custom" key="9763060" align="center"]]
+
+* ====The proper names in the encoded message are the people on the Cr-48 firmware team.==== 
+* ====The various library names that appear on the screen are references to the following:==== 
+** firmware.exe - We are the firmware team, after all.
+** wfrichar.sys - [email address] is me.
+** rspanglr.sys - [email address] is the Cr-48 firmware tech lead.
+** HeartAu.sys - The starship Heart of Gold, from the Hitchhiker's Guide to the Galaxy
+** DevNull.SYS - /dev/null is the special bitbucket device on *nix systems
+** goglplx.SYS - The Googleplex is what some people call the Google corporate headquarters
+** mstrclas.SYS - Those who rule the firmware are the Master Class!
+** MstrShak.SYS - Master Shake, from the TV show Aqua Teen Hunger Force
+** Vega.SYS - Originaly vga.sys (a video driver); I thought of the car from Chevrolet
+** Nova.SYS - Another old Chevy
+** Gremlin.SYS - Yet another old car, this one from AMC
+** TARDIS.SYS - From Doctor Who, of course
+** Jupiter2.Sys - From the old TV show Lost in Space
+** CAMRA.SYS - The Campaign for Real Ale
+** wntrmute.sys - The AI Wintermute, from William Gibson's Neuromancer
+** rdaneel.sys - R. Daneel Olivaw, from a bunch of Isaac Asimov's novels
+** eschaton.sys - I'm thinking of Charlie Stross' SF novel Singularity Sky
+** sundiver.sys - The novel by David Brin
+** hal.dll - The HAL 9000 from 2001: A Space Odyssey
+** STARBUG.SYS - The shuttlecraft from the BBC sitcom Red Dwarf
+** kryten.SYS - The android from Red Dwarf
+** lister.sys - The slacker/hero from Red Dwarf
+** HOLLY.SYS - The computer from Red Dwarf
+** SERMOUSE.SYS - Serial mouse driver, I believe
+** PARMOUSE.SYS - So of course there must be a parallel mouse driver
+** MTYMOUSE.SYS - Mighty Mouse! Here I come to save the day! (a cartoon from my childhood)
+** DngrMouS.SYS - Danger Mouse, another mouse-themed cartoon
+** mkymouse.SYS - Some other cartoon mouse of some sort...
+** mnemouse.SYS - ... and his girlfriend.
+** HNdlNqry.sys - The spaceship Hot Needle of Inquiry, from Larry Niven's Ringworld series
+** serial.sys - The serial port driver
+** cereal.SYS - The cereal port driver
+** browser.sys - Chrome OS has a browser, right?
+** bowser.sys - Jon "Bowzer" Bauman
+** shanana.sys - Sha-Na-Na, the band that Bowzer sings in
+** zzzztop.sys - ZZ Top, a band I like better
+** bsod.SYS - This screen
+** enufstop.SYS - Enough! Stop!
+** croskrnl.exe - If the kernel has a name, it would be CrOS.
+** B0Fh - The IT hero in a series of stories by Simon Travaglia
+** NIGHTMAREGREEN - A really Bad Thing from the Laundry series of SF novels by Charlie Stross
+
+Source: [[https://groups.google.com/forum/#%21msg/chrome-notebook-pilot/hGf-vdxGGEA/dabDxde7incJ|https://groups.google.com/forum/#!msg/chrome-notebook-pilot/hGf-vdxGGEA/dabDxde7incJ]]

@@ -1,0 +1,68 @@
+=Activate or Reset the 3G Modem in the Cr-48= 
+
+----
+====Use this guide if you are not able to activate Verizon 3G Wireless or need to reset a previously activated 3G modem.==== 
+====[[image:cr48verizon.jpg align="right"]]==== 
+====Note: These steps must be completed within Chrome OS, not another operating system.==== 
+====Before starting, you should try the [[http://www.google.com/support/chromeos/bin/static.py?page=ts.cs&ts=1257251|Google Internet connection troubleshooting guide.]]==== 
+==== ==== 
+==**Before you begin**== 
+# ====Start your Cr-48 and sign in to Chrome OS==== 
+# ====Press **ctrl + alt + t** to bring up a crosh prompt==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">modem status</span> and press **enter**==== 
+# ====The computer should respond with a page of information. You will need three numbers from this page:==== 
+** **min** (this will be in the form of a phone number such as 3105551212)
+** **mdn** (this will also be in the form of a phone number)
+** **meid** (this will be a 14-digit code starting with the letter 'A'). This code can also be found under the Cr-48 battery
+# ====If you contacted Verizon Wireless previously, when you call you will need to provide your security code or the name of your first pet==== 
+<span style="background-color: rgba(255,255,255,0.917969); color: #222222; display: block; font-family: arial,sans-serif;">
+</span>
+==<span style="background-color: rgba(255,255,255,0.917969); color: #222222; font-family: arial,sans-serif;">**Change ownership or "reset" the Verizon 3G account on a previously activated Cr-48**</span>== 
+====<span style="background-color: rgba(255,255,255,0.917969); color: #222222; font-family: arial,sans-serif;">If you have a Cr-48 with a 3G account activated by the previous owner, this account will need to be deactivated before you can activate your own account.</span>==== 
+<span style="background-color: rgba(255,255,255,0.917969); color: #222222; display: block; font-family: arial,sans-serif;">
+# ====Ask the previous owner to call Verizon Mobile Broadband support at (800) 766-8419 and take the following steps:==== 
+** Press **#** to skip the phone number section
+** Press **2** to select "no contract"
+** Wait for a customer service representative
+** Give them the **meid** of the Cr-48 (found in the process above as well as under the battery). DO NOT provide the min or mdn numbers -- deactivating these will not remove the account from the device.
+** Ask them to deactivate the account
+# ====Now you can go to the network icon on the bottom right of the screen (top right on Chrome OS versions prior to 20)==== 
+# ====Select "Activate Verizon Wireless"==== 
+# ====You should be presented with a screen to select a plan, or the free 100MB per month for 2 years==== 
+</span>
+==**3G Manual Activation and Modem Factory Reset**== 
+# ====Call Verizon Mobile Broadband support at (800) 786-8419, get an agent on the line and provide them with your identifying information==== 
+# ====Start your Cr-48 and sign in to Chrome OS==== 
+# ====Press **ctrl + alt + t** to bring up a crosh prompt==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">modem factory-reset</span> and press **enter**. The computer will respond with a prompt <span style="font-family: 'Lucida Console',Monaco,monospace;">spc [000000]:</span>==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">000000</span> and press **enter**==== 
+# ====If successful you will see a new prompt with no errors. Wait 60 seconds before proceeding to the next step==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">modem status</span> and press **enter**==== 
+# ====If the computer does not respond, wait 5-10 seconds and repeat step 7==== 
+# ====The computer should respond with something similar to: <span style="font-family: 'Lucida Console',Monaco,monospace;">Modem /org/chromium/ModemManager/Gobi/0</span>==== 
+# ====Verizon Wireless agent will provide you with the following numbers:==== 
+** **min** (will be a phone number, ie. 3105551313)
+** **mdn** (will be a phone number, ie. 3105551212)
+** **spc** (can be 000000 by default)
+** **system_id** (based on your home address or location)
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">modem activate-manual</span> and press **enter**. The computer will then prompt you to enter the **min**, **mdn**, **spc** and **system_id**. Press **enter** after entering each to bring the next prompt.==== 
+# ====If successful, you will see a new prompt with no errors==== 
+# ====Type <span style="background-color: #ffff00; font-family: 'Lucida Console',Monaco,monospace;">exit</span> and press **enter**==== 
+# ====Restart your Cr-48 and sign in to Chrome OS==== 
+# ====Click on the WiFi status bar (top right corner) and select Activate 3G wireless==== 
+# ====Follow the prompts through the activation process. If you receive a 'Connection Error' see the troubleshooting steps below.==== 
+# ====Once the activation process is complete, disable WiFi and verify your 3G connection by visiting a web site such as Google.com==== 
+==== ==== 
+==== ==== 
+==Troubleshooting== 
+====If you receive a 'Connection Error' during the activation process, take the following steps:==== 
+# ====Click on the WiFi status bar (top right corner) and select Disable cellular==== 
+# ====Power down the Cr-48 (hold down power button to shut down)==== 
+# ====Reboot the Cr-48==== 
+# ====Sign in to Chrome OS==== 
+# ====Click on the WiFi status bar (top right corner) and select Disable WiFi==== 
+# ====Click on the WiFi status bar and select Enable Cellular. Verizon should now be listed as ‘Connected’==== 
+# ====Click on Network settings and select Options next to Verizon Wireless, and you can review the 'Connection Details' screen==== 
+# ====Click the Close button and verify your connection by visiting a web site such as Google.com==== 
+
+Source: [[http://www.thechromesource.com/forum/cr-48/195-cr-48-manual-modem-acitvation.html]]

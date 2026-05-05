@@ -1,0 +1,20 @@
+=Open the Cr-48 Case= 
+
+----
+# ====Remove the battery.==== 
+# ====Remove a total of twelve screws from the bottom of the computer. (See the photograph below.)==== 
+** ====Ten screws are under the battery.==== 
+** ====Two screws are under the rubber feet. The feet can be lifted off with a fingernail.==== 
+# ====After removing the screws, carefully remove the bottom of the case. Start on the side with the external video port and slowly work your way around separating the bottom of the computer.==== 
+# ====Place a piece of electrical tape over the small rectangular contact point in the last photograph below. This will disable the BIOS protection and allow you to [[Flash BIOS|flash a different BIOS]] as described [[Flash BIOS|here]].==== 
+# ====Reverse these steps to reassemble the computer.==== 
+
+====To see photographs of a <span class="wiki_link_ext">full teardown</span> of the Cr-48 go [[http://www.techrepublic.com/photos/google-cr-48-chrome-notebook-teardown/490945|here]]==== 
+
+Source: [[http://www.chrome-review.com/flashing-your-cr-48-bios/]]
+
+[[image:cr48screws.jpg width="800" height="534" align="center"]]
+
+
+[[image:cr-48_open.jpg width="800" height="534" align="center"]]
+<span style="display: block; text-align: center;">[[image:cr48tape.jpg width="800" height="535"]]</span>

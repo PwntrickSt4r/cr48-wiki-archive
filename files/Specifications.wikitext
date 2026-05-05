@@ -1,0 +1,90 @@
+=Cr-48 Hardware Specifications= 
+
+----
+=Summary[[image:cr48bbq.jpg align="right"]]= 
+* **CPU**: [[http://ark.intel.com/Product.aspx?id=49491|Intel Atom Processor N455 1.66GHz 512K Cache]]
+* **Motherboard**: Tripod Motherboard MARIO – 6050A240910 – MB – A03
+* **RAM**: Hynix 2GB DDR3 1Rx8 PC3 – 10600S
+* **Chipset**: [[http://ark.intel.com/Product.aspx?id=47610|Intel CG82NM10 PCH]]
+* **ROM**: ITE IT8500E Flash ROM
+* **SSD**: SanDisk sdsa4dh-016G 16GB SATA SSD
+* **3G Modem**: [[http://www.qualcomm.com/documents/gobi-2000-product-sheet|Qualcomm Gobi2000 PCI Express Mini Card]]
+* **Wireless**:
+> [[http://www.azurewave.com/product_AW-NE139_1.asp|AzureWave 802.11 a/b/g/n PCI-E Half MiniCard]] (in PONY models)
+> Atheros Communications Inc. AR928X Wireless Network Adapter (PCI-Express) (rev 01) (in FISH models)
+* **Bluetooth**: Atheros AR5BBU12 Bluetooth V2.1 EDR
+* **Touchpad:** [[http://www.synaptics.com/|Synaptics LuxPad]]
+
+=Detailed Specifications= 
+===**General**=== 
+* **Type**: Netbook
+* **Bundled OS**: Linux (Chrome OS)
+> 
+> **Display**
+* **Screen size**: 12.1 inches
+* **Screen resolution**: 1280 x 800
+* **Aspect ratio**: 16:10
+* **Screen type**: LCD (Active, Color, Backlit, LED)
+* **Screen surface**: Matte / anti-glare
+> 
+> **Processor**
+* **Processor make**: Intel
+* **CPU family**: Atom
+* **CPU model**: N455
+* **Processor speed**: 1.66 GHz
+* **Number of cores**: Single-core
+* **Hyperthreading**: Yes
+* **Cache size**: 32 KB L1 cache; 512 KB L2 cache
+> 
+> **Networking**
+* **WiFi**: 802.11 a, b, g, n
+* **WiFi encryption**: WEP, WPA, WPA2
+* **Mobile broadband**: CDMA-based
+
+===**Video**=== 
+* **Graphics adapter**: Integrated
+* **Graphics (integrated)**: Intel (GMA)
+* **GPU model**: Pineview
+* **Clock speed**: 200 MHz
+* **Memory type**: Shared
+* **Video outputs**: VGA
+
+===**Memory details**=== 
+* **RAM bus / speed**: DDR3 (1333)
+* **RAM slots**: 1
+* **System RAM:** 2 GB
+
+===**Storage details**=== 
+* **Storage interface**: SATA (1.5 Gbps)
+* **Hard drive**: 16 GB (total) SSD / integrated
+
+===**System**=== 
+* **Chipset**: Intel
+* **Chipset model**: CG82NM10 PCH
+* **Environmental**
+* **System cooling**: Fan-cooled
+
+===**Other features**=== 
+* **Integrated webcam**: Yes
+
+===**Battery**=== 
+* **Maximum battery life**: Up to 8 hours
+* **Battery type**: Li-ion (63 Wh capacity)
+* **Battery access**: Removable
+=== === 
+===**Input**=== 
+* **Keyboard**: 74 keys
+* **Pointing device**: Trackpad (Multi-touch)
+
+===**Connections**=== 
+* **USB**: 2.0 (1 port)
+* **Bluetooth**: 2.1 + EDR
+* **SD/SDHC** memory card reader
+
+===**Size and weight**=== 
+* 0.9 inches (h)
+* 11.8 inches (w)
+* 8.6 inches (d)
+* Total weight: 3.8 pounds
+
+Sources: [[http://www.chromeoslounge.com/cr-48-chrome-notebook/207-google-cr-48-notebook-*full*-hardware-specs.html#post413|http://www.chromeoslounge.com/cr-48-chrome-notebook/207-google-cr-48-notebook-*full*-hardware-specs.html#post413]] and [[http://gdgt.com/google/cr-48/specs/]]

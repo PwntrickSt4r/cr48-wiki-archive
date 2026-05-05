@@ -1,0 +1,73 @@
+=Cr-48 Replacement Parts and Accessories= 
+----
+====The following parts are confirmed to be compatible with the Cr-48:==== 
+==== ==== 
+==LCD Panel== 
+* Original LCD panel is Samsung model [[http://www.amazon.com/gp/product/B00APMM4RA/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00APMM4RA&linkCode=as2&tag=mcdotechserv-20|LTN121AT10]]
+
+==AC Adapters[[image:cr48parts.jpg align="right"]]== 
+* Original AC adapter is manufactured by Lite On Technology (Changzhou) Co., Ltd.
+** Model: PA-1400-20GI
+** Input: 100-240V ~1.0A 50-60Hz
+** Output: 19.5V 2.05A
+* [[http://amzn.to/1kE1kGQ|Hewlett-Packard NA374AA#ABA Mini 30W AC Adapter]]
+* [[http://www.amazon.com/gp/product/B003NJUPQE/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B003NJUPQE&linkCode=as2&tag=mcdotechserv-20|Lenmar 50-Watt Notebook Power Adapter Lac50]] (<span style="font-size: 13px; line-height: 19px;">Adjustable output voltage: 9.5V to 20V. Set to 19.5V for Cr-48)</span>
+* <span style="font-size: 13px; line-height: 19px;">[[@http://www.finsix.com|FINsix DART Adapter]] ('A' tip w/4.0x1.7mm DC Male to 5.5x2.1mm DC Female HP adapter OR 'G' tip)</span>
+==Battery== 
+* Currently no known source for compatible replacement battery
+* Original 63Wh lithium-ion battery manufactured by Hewlett-Packard
+* Specifications:
+** rechargeable: yes
+** energy-empty: 0 Wh
+** energy-full: 62.6632 Wh
+** energy-full-design: 62.5152 Wh
+** energy-rate: 9.4868 W
+** voltage: 15.255 V
+** technology: lithium-ion
+* [[file:cr48_battery_1.jpg|Battery teardown photo 1]]
+* [[file:cr48_battery_2.jpg|Battery teardown photo 2]]
+==Solid-State Drive (SSD)== 
+* Original SSD is [[@http://amzn.to/1Rfzc8A|SanDisk model SDSA4DH-016G 16GB mSATA SSD]]
+* [[@http://amzn.to/1IYfn2P|Samsung 850 EVO 120GB - 1TB mSATA SSD]]
+* [[@http://amzn.to/1RfzXi3|Crucial M550 128GB - 512GB mSATA SSD]]
+* [[@http://amzn.to/1dsmJ2Z|MyDigitalSSD 32GB - 256GB mSATA SSD]]
+
+==WiFi== 
+* Original is Atheros Half Mini PCI-E Wireless Card model [[http://www.amazon.com/gp/product/B009HN63QQ/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B009HN63QQ&linkCode=as2&tag=mcdotechserv-20|AR9280 AR5BHB92]]
+* Generally available on [[http://desc.shop.ebay.com/i.html?_nkw=AR9280+AR5BHB92&_sacat=0&_odkw=AR9280+AR5BHB92&_osacat=0&_trksid=p3286.c0.m270.l1313&LH_TitleDesc=1|eBay]]
+
+==USB Ethernet Adapters== 
+* [[http://www.amazon.com/gp/product/B000BL3M3U/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000BL3M3U&linkCode=as2&tag=mcdotechserv-20|Agiler USB 2.0 Ethernet 10/100 Network LAN RJ45 Adapter]]
+* [[http://www.amazon.com/gp/product/B002SHZ1H0/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002SHZ1H0&linkCode=as2&tag=mcdotechserv-20|Cubeternet USB 2.0 Hi-Speed Fast Ethernet Adapter]]
+* [[http://www.amazon.com/gp/product/B000LWESXW/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000LWESXW&linkCode=as2&tag=mcdotechserv-20|Sabrent NT-USB20 USB 2.0 to RJ45 Fast Ethernet 10/100 Base-T Network Adapter]]
+* [[http://www.amazon.com/gp/product/B002DAAPPK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002DAAPPK&linkCode=as2&tag=mcdotechserv-20|Rocketfish Network Adapter]]
+* [[http://www.amazon.com/gp/product/B00006B7D8/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00006B7D8&linkCode=as2&tag=mcdotechserv-20|D-Link DUB-E100 USB 2.0 Fast Ethernet Adapter]]
+* [[http://www.amazon.com/gp/product/B002OFJRW6/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002OFJRW6&linkCode=as2&tag=mcdotechserv-20|Nu USB 2.0 3-Port Hub with Ethernet Adapter]]
+* [[http://www.amazon.com/gp/product/B001NLV4TQ/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B001NLV4TQ&linkCode=as2&tag=mcdotechserv-20|Cisco-Linksys USB300M]]
+* [[http://www.monoprice.com/products/product.asp?p_id=5345|AX88178 - USB2.0 to 10/100/1000M Gigabit Ethernet Adapter]]
+
+==USB Hubs== 
+* <span style="background-color: transparent; font-family: inherit; font-size: inherit; text-decoration: inherit; vertical-align: baseline;">[[http://www.amazon.com/gp/product/B001GUY5PY/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B001GUY5PY&linkCode=as2&tag=mcdotechserv-20|IOGEAR 4-Port USB 2.0 Hub model GUH285]]</span>
+* [[http://www.amazon.com/gp/product/B000Q8UAWY/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000Q8UAWY&linkCode=as2&tag=mcdotechserv-20|Belkin USB 2.0 4-Port Ultra Mini Hub model F5U407]]
+* [[http://www.amazon.com/gp/product/B00006B91Z/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00006B91Z&linkCode=as2&tag=mcdotechserv-20|Targus 4-Port USB 2.0 Ultra Mini Hub model PA055U]]
+
+==Audio Port Adapters== 
+* [[http://www.amazon.com/gp/product/B002SK66OY/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002SK66OY&linkCode=as2&tag=mcdotechserv-20|PC Headset to 3.5mm Smartphone Adapter]] - allows connection of smartphone headsets (microphone and headphone) to the headphone (TRRS) jack of the Cr-48
+
+==Wireless Mice and Keyboards== 
+* Any wireless mouse or keyboard __with a USB dongle__ should work fine with the Cr-48
+* Set the speed of the mouse using the Touchpad settings at [[chrome://settings/system]]
+* Known-compatible wireless mice:
+** [[http://www.amazon.com/gp/product/B0002CPBX2/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0002CPBX2&linkCode=as2&tag=mcdotechserv-20|Microsoft Standard Wireless Optical Mouse 1000]]
+** [[http://www.amazon.com/gp/product/B0002CPBWI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0002CPBWI&linkCode=as2&tag=mcdotechserv-20|Microsoft Wireless Notebook Optical Mouse 3000]]
+** [[http://www.amazon.com/gp/product/B002DPUUL4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002DPUUL4&linkCode=as2&tag=mcdotechserv-20|Microsoft Wireless Mobile Mouse 4000]]
+** [[http://www.amazon.com/gp/product/B00165XQWW/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00165XQWW&linkCode=as2&tag=mcdotechserv-20|Logitech V450 Nano Cordless Laser Mouse]]
+** [[http://www.amazon.com/gp/product/B003HC2FHE/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B003HC2FHE&linkCode=as2&tag=mcdotechserv-20|Logitech Wireless Mouse M305]]
+** [[http://www.amazon.com/gp/product/B008WH7AN8/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008WH7AN8&linkCode=as2&tag=mcdotechserv-20|Rocketfish Nano Laptop Laser Mouse]]
+** [[http://www.amazon.com/gp/product/B002VG0ZVA/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002VG0ZVA&linkCode=as2&tag=mcdotechserv-20|Gear Head 3 Button Wireless Optical Wheel Mouse model MP2350BLK]]
+** [[http://www.amazon.com/gp/product/B000SKXCXO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000SKXCXO&linkCode=as2&tag=mcdotechserv-20|DAYTONA II, SwissGear Wireless Optical Mobile Mouse]]
+>> 
+>> 
+
+Sources: [[https://groups.google.com/forum/#%21topic/chrome-notebook-pilot/QXhKoAIrrXQ|https://groups.google.com/forum/#!topic/chrome-notebook-pilot/QXhKoAIrrXQ]] and [[https://groups.google.com/forum/?pli=1#%21topic/chrome-notebook-pilot/4vEjrTI-Xmo|https://groups.google.com/forum/?pli=1#!topic/chrome-notebook-pilot/4vEjrTI-Xmo]] and [[http://www.chromeoslounge.com/cr-48-chrome-notebook/1726-google-not-making-replacement-batteries-cr-48-a.html]] and [[http://www.chromeoslounge.com/cr-48-chrome-notebook/1553-i-upgraded-my-ssd-heres-my-amateur-mini-review.html]] and [[http://www.chromeoslounge.com/cr-48-chrome-notebook/2263-mydigitalssd-64gb-pre-review-thread-buildup.html]] and [[http://chromebooking.blogspot.com/2011/01/wifi-where-i-use-my-cr-48-most-of-time.html]] [[https://groups.google.com/forum/#%21topic/chromebook-central/qjRUAw4fBvA|https://groups.google.com/forum/#!topic/chromebook-central/qjRUAw4fBvA]] and
+[[http://www.chromeoslounge.com/accesories/372-accessories-work-cr-48-notebook.html]]

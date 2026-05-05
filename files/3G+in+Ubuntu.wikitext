@@ -1,0 +1,16 @@
+=Use 3G Wireless in Ubuntu on the Cr-48= 
+----
+
+====If you have installed Ubuntu via <span class="wiki_link_ext">[[Install Ubuntu|Jay Lee's easy-install method]]</span>, 3G networking will work with the following steps:==== 
+# ====Start the computer and boot into Chrome OS==== 
+# ====Start the Mobile Broadband 3G Verizon connection==== 
+** ====See [[3G|this guide]] if you still need to activate your Verizon account==== 
+# ====__Reboot__ into Ubuntu (__do not shut down__ between your Chrome OS session and your Ubuntu session)==== 
+** ====See [[Install Ubuntu|this guide]] if you still need to install Ubuntu==== 
+** ====See [[Dual Boot Shortcuts|this guide]] to create easy shortcuts to switch between Chrome OS and Ubuntu==== 
+# ====Pull down the network connections menu and you should see **Enable Mobile Broadband**. Make sure this is checked.==== 
+# ====If a connection isn't already active, go into **Edit Connections...**, then to the **Mobile Broadband** tab and select the **Add** button. Go through the setup steps leaving the phone number and other settings as defaults.==== 
+# ====Your 3G connection should now be active. Disable any wifi connection to test 3G connectivity.==== 
+# ====If you reboot, shut down, or put the laptop to sleep you may need to repeat steps 1 through 4 to re-establish your 3G connection.==== 
+
+Source:[[http://chromeos-cr48.blogspot.com/2011/04/ubuntu-1104-for-cr-48-is-ready.html?showComment=1306296196110#c6882518919657745370| http://chromeos-cr48.blogspot.com/2011/04/ubuntu-1104-for-cr-48-is-ready.html?showComment=1306296196110#c6882518919657745370]]

@@ -1,0 +1,21 @@
+=<span style="background-color: #ffffff;">3G in Windows 8</span>= 
+----
+====<span style="background-color: #ffffff;">Follow this guide to use the Gobi 2000 3G hardware under Windows 8. This process differs slightly from the guide for Windows 7 both in instructions and in the files used.</span>==== 
+# ====Download and install the Qualcomm Gobi 2000 Lenovo installer for Windows available [[@https://docs.google.com/open?id=0B9rTgRm4OkZwUy1VMXhDTjVTSi10elZ2cTFEZVl5Zw|here]]==== 
+# ====Download and unzip the Gobi 2000 Cr-48 Windows 8 installation package available [[@http://dl.dropbox.com/u/47696/gobi-cr48-2012-12-8.zip?dl=1|here]]==== 
+# ====Move the **<span style="font-family: 'Lucida Console',Monaco,monospace;">QUALCOMM</span>** folder from the Gobi 2000 Cr-48 installation package to **<span style="font-family: 'Lucida Console',Monaco,monospace;">C:\ProgramData\</span>** (it may be necessary to boot into Safe Mode to overwrite the existing files)==== 
+# ====Right-click Computer, select Properties, then Device Manager to find Gobi 2000 under "Other devices"==== 
+# ====Right-click the Gobi 2000 icon in the Device Manager and select "Update Driver Software"==== 
+# ====Install the drivers located in the installation package in the folder entitled **<span style="font-family: 'Lucida Console',Monaco,monospace;">cr48-modified</span>** (be sure to check the "Include subfolders" box)==== 
+# ====Move the contents of the folder entitled **<span style="font-family: 'Lucida Console',Monaco,monospace;">firmware</span>** to **<span style="font-family: 'Lucida Console',Monaco,monospace;">C:\Program Files\Qualcomm\Images\Lenovo\1</span>** (overwrite the existing files)==== 
+# ====<span style="background-color: #ffffff;">Press the Search key + R and type "regedit" to launch Registry Editor.</span>==== 
+# ====In the Registry Editor, go to: //HKey Local Machine\System\CurrentControlSet\Enum\USB\VID_1410&PID_A014\DeviceParameters\// and then right-click, select New -> String Value. Enter "PortName", press enter. Then right-click on PortName, select Modify, and enter "COM3" in the Value Data field. Close the Registry Editor.==== 
+# ====Open the **<span style="font-family: 'Lucida Console',Monaco,monospace;">Release</span>** folder in the installation package and run **<span style="font-family: 'Lucida Console',Monaco,monospace;">GobiLoader.exe</span>**Use the Device Manager to scan for hardware changes==== 
+# ====Windows will find new hardware automatically and install the remaining devices necessary to run the 3G modem.==== 
+# ====Go to Start > Control Panel > Network and Internet > Network and Sharing Center and select "Set up a new connection or network"==== 
+# ====Select "Set up a dial-up connection"==== 
+# ====Enter <span style="font-family: 'Lucida Console',Monaco,monospace;">#777</span> as the number, name the connection "<span style="font-family: 'Lucida Console',Monaco,monospace;">Verizon 3G</span>" and click **Connect**==== 
+# ====If you get a message that the "modem cannot be found," try running **<span style="font-family: 'Lucida Console',Monaco,monospace;">gobiloader.exe</span>** again.==== 
+
+
+<span style="background-color: #ffffff; color: #555555; font-family: 'Istok Web',Helvetica,Arial,sans-serif; font-size: 12px; vertical-align: baseline;">Source: </span>[[http://www.chromeoslounge.com/cr-48-chrome-notebook/807-cr48-gobi2000-use-other-oses-13.html#post16407|http://www.chromeoslounge.com/cr-48-chrome-notebook/807-cr48-gobi2000-use-other-oses-13.html#post16407]]
