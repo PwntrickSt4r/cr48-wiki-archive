@@ -4,7 +4,7 @@
 </p>
 
 > [!NOTE]
-> If images or files are not displayed on the pages, or if you can't open them, remember their names and try to find them in the "files" or "pages" folder.
+> If images or files are not displayed on the pages, or if you can't open them, remember their names and try to find them in the "images" folder.
 ## Hardware, Repair & Maintenance
 * [Hardware Specifications](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Specifications.html)
 * [Detailed Specifications](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Cr-48+Hardware+Specifications.html)
