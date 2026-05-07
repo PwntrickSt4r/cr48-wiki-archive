@@ -3,6 +3,8 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/ChromeOS_Logo.svg/3840px-ChromeOS_Logo.svg.png" alt="Logo" width="400">
 </p>
 
+> [!NOTE]
+> If images or files are not displayed on the pages, or if you can't open them, remember their names and try to find them in the "files" or "pages" folder.
 ## Hardware, Repair & Maintenance
 * [Hardware Specifications](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Specifications.html)
 * [Detailed Specifications](https://pwntrickst4r.github.io/cr48-wiki-archive/pages/Cr-48+Hardware+Specifications.html)
